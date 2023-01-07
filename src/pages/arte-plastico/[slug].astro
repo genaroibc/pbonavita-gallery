@@ -1,0 +1,14 @@
+---
+import staticPaths from "../../../public/assets/maps/staticPaths.json";
+import Layout from "../../layouts/Layout.astro";
+
+export function getStaticPaths() {
+  return staticPaths;
+}
+
+const { slug } = Astro.params;
+---
+
+<Layout title={slug!}>
+  <span>{slug}</span>
+</Layout>
