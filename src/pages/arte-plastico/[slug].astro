@@ -1,14 +1,24 @@
 ---
 import staticPaths from "public/assets/maps/staticPaths.json";
 import Layout from "src/layouts/Layout.astro";
+import pictures from "public/assets/maps/pictures.json";
+import type { CollectionsSlugs } from "src/types";
 
 export function getStaticPaths() {
   return staticPaths;
 }
 
-const { slug } = Astro.params;
+const slug = Astro.params.slug as CollectionsSlugs;
 ---
 
 <Layout title={slug!}>
-  <span>{slug}</span>
+  <h1>{slug}</h1>
+
+  <section>
+    {
+      pictures[slug].map(({ imgSrc, imgDescription }) => (
+        <img width="200" height="200" src={imgSrc} alt={imgDescription} />
+      ))
+    }
+  </section>
 </Layout>

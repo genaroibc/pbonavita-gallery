@@ -1,0 +1,38 @@
+{
+  "lapiz-y-grafito": [
+    {
+      "imgSrc": "/assets/svg/favicon.svg",
+      "imgDescription": "Lorem"
+    },
+    {
+      "imgSrc": "/assets/svg/favicon.svg",
+      "imgDescription": "Lorem"
+    },
+    {
+      "imgSrc": "/assets/svg/favicon.svg",
+      "imgDescription": "Lorem"
+    },
+    {
+      "imgSrc": "/assets/svg/favicon.svg",
+      "imgDescription": "Lorem"
+    }
+  ],
+  "acrilico": [
+    {
+      "imgSrc": "/assets/svg/favicon.svg",
+      "imgDescription": "Ipsum"
+    },
+    {
+      "imgSrc": "/assets/svg/favicon.svg",
+      "imgDescription": "Ipsum"
+    },
+    {
+      "imgSrc": "/assets/svg/favicon.svg",
+      "imgDescription": "Ipsum"
+    },
+    {
+      "imgSrc": "/assets/svg/favicon.svg",
+      "imgDescription": "Ipsum"
+    }
+  ]
+}
