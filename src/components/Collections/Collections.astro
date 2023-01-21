@@ -1,0 +1,24 @@
+---
+import CollectionCard from "./CollectionCard/CollectionCard.astro";
+import type { TCollectionCard } from "./CollectionCard/CollectionCard.astro";
+import collections from "public/maps/collections.json";
+---
+
+<section class="collectionCardList">
+  {
+    (collections as TCollectionCard[]).map(collection => (
+      <CollectionCard {...collection} />
+    ))
+  }
+</section>
+
+<style>
+  .collectionCardList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    gap: 1rem;
+
+    max-width: 1000px;
+  }
+</style>
