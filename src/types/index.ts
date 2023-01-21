@@ -1,1 +1,1 @@
-export type CollectionsSlugs = "lapiz-y-grafito" | "acrilico";
+export type CollectionsSlugs = "grafito" | "acrilico" | "tecnica-mixta";

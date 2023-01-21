@@ -1,40 +1,12 @@
 ---
-import CollectionCard from "src/components/CollectionCard.astro";
-import collections from "public/maps/collections.json";
-import Layout from "src/layouts/Layout.astro";
-import type { TCollectionCard } from "src/components/CollectionCard.astro";
+import Collections from "src/components/Collections/Collections.astro";
+import PageLayout from "src/layouts/PageLayout.astro";
 ---
 
-<Layout title="Paula Bonavita">
+<PageLayout title="Paula Bonavita">
   <main>
     <h1>Paula Bonavita</h1>
 
-    <section class="collectionCardList">
-      {
-        (collections as TCollectionCard[]).map(collection => (
-          <CollectionCard {...collection} />
-        ))
-      }
-    </section>
+    <Collections />
   </main>
-</Layout>
-
-<style>
-  h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 2rem auto;
-
-    text-align: center;
-  }
-
-  .collectionCardList {
-    display: grid;
-
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    justify-content: center;
-
-    gap: 1rem;
-    max-width: 1000px;
-  }
-</style>
+</PageLayout>
