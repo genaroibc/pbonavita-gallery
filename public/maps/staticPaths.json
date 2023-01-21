@@ -1,12 +1,1 @@
-[
-  {
-    "params": {
-      "slug": "lapiz-y-grafito"
-    }
-  },
-  {
-    "params": {
-      "slug": "acrilico"
-    }
-  }
-]
+[{"params":{"slug":"acrilico"}},{"params":{"slug":"grafito"}},{"params":{"slug":"tecnica-mixta"}}]

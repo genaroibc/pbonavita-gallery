@@ -1,12 +1,17 @@
 [
   {
-    "imageSrc": "/assets/img/grafito/grafito-arana.webp",
-    "collectionURL": "/arte-plastico/lapiz-y-grafito",
-    "collectionTitle": "Lápiz y Grafito"
+    "imageSrc": "/assets/img/acrilico/acrilico-costumbres.webp",
+    "collectionURL": "/arte-plastico/acrilico",
+    "collectionTitle": "acrilico"
   },
   {
-    "imageSrc": "/assets/img/grafito/grafito-capas-tierra.webp",
-    "collectionURL": "/arte-plastico/acrilico",
-    "collectionTitle": "Acrílico"
+    "imageSrc": "/assets/img/grafito/grafito-arana.webp",
+    "collectionURL": "/arte-plastico/grafito",
+    "collectionTitle": "grafito"
+  },
+  {
+    "imageSrc": "/assets/img/tecnica-mixta/mixta-diamantes.webp",
+    "collectionURL": "/arte-plastico/tecnica-mixta",
+    "collectionTitle": "tecnica mixta"
   }
 ]
