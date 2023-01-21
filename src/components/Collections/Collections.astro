@@ -1,24 +1,38 @@
 ---
-import CollectionCard from "./CollectionCard/CollectionCard.astro";
-import type { TCollectionCard } from "./CollectionCard/CollectionCard.astro";
+import CollectionCard from "./CollectionCard.astro";
+import type { TCollectionCard } from "./CollectionCard.astro";
 import collections from "public/maps/collections.json";
 ---
 
-<section class="collectionCardList">
-  {
-    (collections as TCollectionCard[]).map(collection => (
-      <CollectionCard {...collection} />
-    ))
-  }
+<section>
+  <h3>Mis colecciónes</h3>
+
+  <div class="collectionCardList">
+    {
+      (collections as TCollectionCard[]).map(collection => (
+        <CollectionCard {...collection} />
+      ))
+    }
+  </div>
 </section>
 
 <style>
+  section {
+    margin: 4rem auto;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
   .collectionCardList {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    place-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem 1rem;
 
+    margin: 2rem auto;
     max-width: 1000px;
   }
 </style>

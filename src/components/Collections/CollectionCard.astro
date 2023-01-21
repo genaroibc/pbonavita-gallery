@@ -38,9 +38,10 @@ const { collectionURL, collectionTitle, imageSrc } = Astro.props;
     padding: 1rem;
     margin: 0;
 
-    background-color: #002575;
+    background-color: var(--secondary-color);
     color: #f6f6f6;
     margin: 0;
+    border-radius: 5px;
   }
 
   .collectionCard__img {
@@ -52,5 +53,6 @@ const { collectionURL, collectionTitle, imageSrc } = Astro.props;
 
   .collectionCard__title {
     text-align: center;
+    margin: 1rem auto;
   }
 </style>
