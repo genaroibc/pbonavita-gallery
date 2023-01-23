@@ -1,0 +1,9 @@
+---
+import navBarLinks from "public/maps/navBarLinks.json";
+---
+
+<header class="p-4 bg-[var(--primary-color)] sticky top-0 z-10">
+  <nav class="flex p-4 gap-4 justify-end">
+    {navBarLinks.map(({ href, title }) => <a href={href}>{title}</a>)}
+  </nav>
+</header>
