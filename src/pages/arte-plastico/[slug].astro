@@ -12,41 +12,35 @@ const slug = Astro.params.slug as CollectionsSlugs;
 ---
 
 <PageLayout title={slug!}>
-  <h1>{slug.replaceAll("-", " ")}</h1>
-  <section class="picturesContainer">
+  <h1>{slug.replaceAll("-", " ").toUpperCase()}</h1>
+
+  <section
+    class="picturesContainer w-full mx-auto flex justify-center flex-wrap gap-4"
+  >
     {
       pictures[slug].map(({ imgSrc, imgDescription }) => (
-        <img src={imgSrc} alt={imgDescription} />
+        <img class="gallery-image" src={imgSrc} alt={imgDescription} />
       ))
     }
   </section>
 </PageLayout>
 
 <style>
-  .picturesContainer {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-
-    padding: 3rem 1rem;
-  }
-
-  img {
-    object-fit: cover;
-
-    border-radius: 10px;
+  .gallery-image {
+    border-radius: 5px;
 
     opacity: 0.7;
     filter: grayscale(1);
 
     transition: filter 0.3s ease, opacity 0.3s ease;
+    flex-grow: 1;
   }
 
   .picturesContainer:has(img:hover) img {
     opacity: 0.2;
   }
 
-  img:hover {
+  .gallery-image:hover {
     opacity: 1 !important;
     filter: grayscale(0);
   }
