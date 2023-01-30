@@ -4,10 +4,12 @@ import type { TCollectionCard } from "./CollectionCard.astro";
 import collections from "public/maps/collections.json";
 ---
 
-<section>
-  <h3>Mis colecciónes</h3>
+<section class="my-16 mx-auto">
+  <h3 class="text-center">Mis colecciónes</h3>
 
-  <div class="collectionCardList">
+  <div
+    class="collectionCardList grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] place-items-center justify-center gap-x-4 gap-y-8 mx-auto my-8 max-w-5xl"
+  >
     {
       (collections as TCollectionCard[]).map(collection => (
         <CollectionCard {...collection} />
@@ -15,24 +17,3 @@ import collections from "public/maps/collections.json";
     }
   </div>
 </section>
-
-<style>
-  section {
-    margin: 4rem auto;
-  }
-
-  h3 {
-    text-align: center;
-  }
-
-  .collectionCardList {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    place-items: center;
-    justify-content: center;
-    gap: 2rem 1rem;
-
-    margin: 2rem auto;
-    max-width: 1000px;
-  }
-</style>
