@@ -36,6 +36,10 @@ const slug = Astro.params.slug as CollectionsSlugs;
     flex-grow: 1;
   }
 
+  .picturesContainer {
+    max-width: 900px;
+  }
+
   .picturesContainer:has(img:hover) img {
     opacity: 0.2;
   }
