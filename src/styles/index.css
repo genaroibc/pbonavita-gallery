@@ -5,10 +5,10 @@
 }
 
 html {
-  --primary-color: #3f0071;
-  --secondary-color: #ff0867;
-  --terciary-color: #332fd0;
-  --complement-color: #0002a1;
+  --primary-color: #1b309a;
+  --secondary-color: #952b8e;
+  --terciary-color: #45d09f;
+  --complement-color: #eaaf40;
   font-family: system-ui, sans-serif;
   background-color: #111;
   color: #f6f6f6;
