@@ -1,17 +1,1 @@
-[
-  {
-    "imageSrc": "/assets/img/acrilico/acrilico-costumbres.webp",
-    "collectionURL": "/arte-plastico/acrilico",
-    "collectionTitle": "acrilico"
-  },
-  {
-    "imageSrc": "/assets/img/grafito/grafito-arana.webp",
-    "collectionURL": "/arte-plastico/grafito",
-    "collectionTitle": "grafito"
-  },
-  {
-    "imageSrc": "/assets/img/tecnica-mixta/mixta-diamantes.webp",
-    "collectionURL": "/arte-plastico/tecnica-mixta",
-    "collectionTitle": "tecnica mixta"
-  }
-]
+[{"imageSrc":"/assets/img/acrilico/acilico-somos-lo-que-somos.jpg","collectionURL":"/arte-plastico/acrilico","collectionTitle":"acrilico"},{"imageSrc":"/assets/img/grafito/grafito-arana.webp","collectionURL":"/arte-plastico/grafito","collectionTitle":"grafito"},{"imageSrc":"/assets/img/lapicera/lapicera-china-psicodelica.jpg","collectionURL":"/arte-plastico/lapicera","collectionTitle":"lapicera"},{"imageSrc":"/assets/img/optico/optico-barrilete.jpg","collectionURL":"/arte-plastico/optico","collectionTitle":"optico"},{"imageSrc":"/assets/img/tecnica-mixta/mixta-amarelo.jpg","collectionURL":"/arte-plastico/tecnica-mixta","collectionTitle":"tecnica mixta"}]
