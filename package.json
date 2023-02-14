@@ -8,7 +8,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "map-collections": "node src/utils/generateMaps.js"
   },
   "dependencies": {
     "@astrojs/tailwind": "^2.1.3",
